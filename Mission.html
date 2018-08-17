@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Space Organisation of India</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style type="text/css">
+body {
+margin: 0;
+font-family: sans-serif;
+color: white;
+background-color: #333;
+}
+.backgroundpicture {
+padding-right: 5px;
+padding-left: 5px;
+background:url(surface.jpg) no-repeat center center fixed;
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size:cover;
+height:100vh;
+-webkit-animation: fadein 1.5s; /* Safari, Chrome and Opera > 12.1 */
+-moz-animation: fadein 1.5s; /* Firefox < 16 */
+-ms-animation: fadein 1.5s; /* Internet Explorer */
+-o-animation: fadein 1.5s; /* Opera < 12.1 */
+animation: fadein 1.5s;
+}
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+.topbar{
+width:100%;
+background-color:#333;
+overflow:hidden;
+}
+.topbar a{
+display: inline-block;
+float:left;
+color:white;
+text-align:center;
+padding:16px 18px;
+text-decoration:none;
+font-size:17px;
+}
+.topbar a.active{
+background-color:#000000;
+color:white;
+}
+.topbar a.icon {
+color:white;
+background-color:red;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create two equal columns that sits next to each other */
+.column {
+  flex: 50%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+}
+* {
+  box-sizing: border-box;
+}
+section {
+  color: #fff;
+}
+
+div {
+  height: 100%;
+}
+
+article {
+  position: absolute;
+  top: 47%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  padding: 20px;
+}
+.container {
+  display: table;
+  width: 100%;
+}
+
+.left-half {
+  position: absolute;
+  left: 0px;
+  width: 50%;
+}
+
+.right-half {
+  position: absolute;
+  right: 0px;
+  width: 50%;
+}
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 1500, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
+</head>
+<body>
+<div class="topbar">
+<a class="icon" href="index.html"><i class="fa fa-rocket" style="font-size:24;"></i></a>
+<a href="index.html">Space Organisation of India </a>
+<a class="active" href="index.html">Home</a>
+<a href="achievements.html">Achievements</a>
+</div>
+<div class="backgroundpicture">
+<section class="container">
+<div class="left-half">
+<article>
+<h1>Mission Timeline</h1>
+<b><i class="fa fa-angle-double-right"></i> Launch</b>
+<p>
+<img src="img5.jpg" height="105" width="230">
+<p>
+<b><i class="fa fa-angle-double-right"></i> Cruise/Approach</b>
+<p>
+<img src="img2.jpg" height="105" width="230">
+<p>
+<b><i class="fa fa-angle-double-right"></i> Entry, Descent & Landing</b>
+<p>
+<img src="landing.jpg" height="105" width="230">
+<p>
+<b><i class="fa fa-angle-double-right"></i> Surface Mission</b>
+<p>
+<img src="img6.jpg" height="105" width="230">
+
+</article>
+</div>
+<div class="right-half">
+<article>
+<h1>Mars</h1>
+<p>Mars is the fourth planet from the Sun and is the second smallest planet in the solar system. Named after the Roman god of war, Mars is also often described as the “Red Planet” due to its reddish appearance. Mars is a terrestrial planet with a thin atmosphere composed primarily of carbon dioxide.</p>
+<br />
+<iframe width="560" height="315" src="https://www.youtube.com/embed/nQ365jzwk5w" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+</article>
+</div>
+</section>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+</div>
+</body>
+</html>
